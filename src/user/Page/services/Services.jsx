@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 import ServicesProviderPackage from './ServiceProviderPackage'
 
 const script = document.createElement('script');
-  script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&libraries=places,geocoding`;
+  script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&libraries=places,geocoding`;
   document.body.appendChild(script);
 export default function Services() {
   const updatedFormData = useSelector((state) => state.form.updatedFormData);

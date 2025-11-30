@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function PlaceDetails() {
-  const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+  const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
   const placeName = "taj hotel"
   const [placeId, setPlaceId] = useState("");
   const [placeData, setPlaceData] = useState(null);
