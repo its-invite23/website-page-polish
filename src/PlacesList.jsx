@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const PlacesList = () => {
   const LOCATION = '26.9124,75.7873'; 
   const RADIUS = 5000; 
-  const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY; 
+  const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY; 
 
   const [places, setPlaces] = useState([]);
   const [error, setError] = useState(null);

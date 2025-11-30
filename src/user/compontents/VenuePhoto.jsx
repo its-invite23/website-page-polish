@@ -3,7 +3,7 @@ import ViewImage from "../../assets/product.png";
 // Ensure correct path to default image
 
 const VenuePhotos = ({ venue }) => {
-  const apikey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+  const apikey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
   // Function to get photo URLs from Google Places API
   const getPhotoUrls = (photos) => {

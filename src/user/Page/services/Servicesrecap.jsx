@@ -52,7 +52,7 @@ export default function ServicesRecap({ data, formData, id, description, setDesc
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`, // Replace with your OpenAI API key
+          Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`, // Replace with your OpenAI API key
         },
         body: JSON.stringify({
           model: "gpt-4",
@@ -157,7 +157,7 @@ export default function ServicesRecap({ data, formData, id, description, setDesc
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`, // Replace with your OpenAI API key
+          Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`, // Replace with your OpenAI API key
         },
         body: JSON.stringify({
           model: "gpt-4",
